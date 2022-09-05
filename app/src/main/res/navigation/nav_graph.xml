@@ -15,4 +15,9 @@
         android:name="com.boo.sample.samplebackground.JobFragment"
         android:label="fragment_job"
         tools:layout="@layout/fragment_job" />
+    <fragment
+        android:id="@+id/workFragment"
+        android:name="com.boo.sample.samplebackground.WorkFragment"
+        android:label="fragment_work"
+        tools:layout="@layout/fragment_work" />
 </navigation>

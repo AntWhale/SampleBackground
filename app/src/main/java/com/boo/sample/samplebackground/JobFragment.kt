@@ -1,5 +1,6 @@
 package com.boo.sample.samplebackground
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -23,5 +24,8 @@ class JobFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.button.setOnClickListener {
+            JobService.enqueueWork(requireContext(), Intent())
+        }
     }
 }
